@@ -76,6 +76,14 @@ target_link_libraries(setbox
 )
 add_dependencies(setbox ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
+add_executable(newcontroller
+  src/newcontroller.cpp
+)
+target_link_libraries(newcontroller
+  ${catkin_LIBRARIES}
+)
+add_dependencies(newcontroller ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
 
