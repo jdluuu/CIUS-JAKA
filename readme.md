@@ -5,6 +5,34 @@
 ### PartII Quick start
 ### PartIII 正常情况下文件夹的结构
 
+## Update
+
+注意，本次代码修改了以下部分
+
+```
+1. Cmakelist.txt
+2. newcontroller.cpp
+3. jakaUr/united_jakaUr_gazebo/launch/posi_only.launch
+4. jakaUr/united_jakaUr_gazebo/launch/arm_gazebo_controller.launch
+5. jakaUr/united_jakaUr_gazebo/config/arm_cam_joint.yaml
+6. jakaUr/united_jakaUr_gazebo/config/arm_gazebo_control.yaml
+```
+
+同时，cam_follow.py也有很小的修改：
+```
+joint1_controller -> cam_joint1_controller
+joint2_controller -> cam_joint2_controller
+```
+
+现在应该使用以下代码启动控制器：
+
+```
+roslaunch united_jakaUr_gazebo posi_only.launch
+rosrun myController newcontroller
+```
+
+
+
 ## PartI Questions
 
 存在已知的问题，控制器有可能卡死或者规划失败，问题根据我目前的认知来自于轨迹重规划使用的时间具有不确定性，以及ros自身消息传递有延迟，已经在改了=.=
