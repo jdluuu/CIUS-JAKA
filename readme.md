@@ -1,4 +1,4 @@
-# CIUS2024 卢家栋的代码库
+# CIUS2024 机械臂动态重规划代码库
 
 ## 目录
 ### PartI Questions
