@@ -37,8 +37,6 @@ rosrun myController newcontroller
 
 存在已知的问题，控制器有可能卡死或者规划失败，问题根据我目前的认知来自于轨迹重规划使用的时间具有不确定性，以及ros自身消息传递有延迟，已经在改了=.=
 
-代码很混乱，有任何问题或者改进方法都希望联系wechat: Lujd0423
-
 ## PartII Quick start
 ### 依赖:
 ubuntu 18.04 + ros melodic
